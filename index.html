@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Below we include the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        type="text/css" media="screen" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Fancy Box</title>
+</head>
+
+<body>
+    <h2>Example of <a href="http://fancyapps.com/fancybox/3/">FancyBox</a> lightbox</h2>
+
+    <div class="gallery">
+        <a href="https://home.ctw.utwente.nl/slootenvanf/div/fancybox_images/Chrysanthemum.jpg"><img
+                src="https://home.ctw.utwente.nl/slootenvanf/div/fancybox_images/tn/Chrysanthemum.jpg"
+                alt="Chrysanthemum: nice flower."></a>
+        <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Desert.jpg"><img
+                src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Desert.jpg"
+                alt="Desert mountains"></a>
+        <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Hydrangeas.jpg"><img
+                src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Hydrangeas.jpg" width="100"
+                height="75" alt="Hydrangeas, called 'Hortensia' in Dutch"></a>
+        <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Jellyfish.jpg"><img
+                src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Jellyfish.jpg" title="Jellyfish"></a>
+        <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Koala.jpg"><img
+                src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Koala.jpg" alt="Koala"></a>
+        <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Lighthouse.jpg"><img
+                src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Lighthouse.jpg" alt="Lighthouse"></a>
+        <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Penguins.jpg"><img
+                src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Penguins.jpg" alt="Penguins"></a>
+        <a href="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/Tulips.jpg"><img
+                src="https://home.et.utwente.nl/slootenvanf/div/fancybox_images/tn/Tulips.jpg" alt="Yellow tulips"></a>
+    </div>
+
+    <div class="block">
+        Steps to create a webpage with this viewer:
+        <ol>
+            <li>Add jQuery and FancyBox scripts to the header of your webpage:
+                <pre>
+&lt;!-- Below we include the jQuery Library --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Add fancyBox --&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" /&gt;
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"&gt;&lt;/script&gt;</pre>
+
+            </li>
+            <li>
+                <p>Create a set of linked images:</p>
+                <pre>
+&lt;div class="gallery"&gt;
+&lt;a href="fullsize.png"&gt;&lt;img src="thumbnail.png"&gt;&lt;/a&gt;
+&lt;a href="fullsize.png"&gt;&lt;img src="thumbnail.png"&gt;&lt;/a&gt;
+&lt;a href="fullsize.png"&gt;&lt;img src="thumbnail.png"&gt;&lt;/a&gt;
+...
+&lt;/div&gt;
+</pre>
+                <p>For better performance, use thumbnails in the <code>img src</code>.</p>
+            </li>
+
+            <li>
+                <p>At the end of the page, add the script to start FancyBox:</p>
+                <pre>
+&lt;script&gt;
+$(document).ready(function() {
+  $(".gallery a").fancybox();
+});
+&lt;/script&gt;
+</pre>
+            </li>
+        </ol>
+        <p>Detailed instructions, options, examples and tips & tricks can be found on the
+            <a href="http://fancyapps.com/fancybox/3/">FancyBox site</a>.
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
